@@ -1,0 +1,6 @@
+== A public link for the project: PUT /api/v1/projects/2/shares {"permission":0}
+-> 201, hash "oFXU…(43 characters)", permission 0 (read), sharing_type 1 (public link, no password)
+== The link's page answers without any login: GET /share/<hash> -> HTTP 200
+
+== PUT /api/v1/tasks/6/attachments — a plain-text note pinned to the boxes task
+-> 200 {"errors":null,"success":[{"file":{"name":"note.txt","mime":"text/plain; charset=utf-8","size":76}}]}

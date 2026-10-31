@@ -1,0 +1,20 @@
+== GET /projects/2/views/12/tasks — the board, buckets with their tasks inside
+jq: error (at <stdin>:1): Cannot iterate over null (null)
+
+== POST /projects/2/tasks/4 — give the sweeping task a reminder (mailer is OFF in this lab)
+{
+  "id": null,
+  "title": null,
+  "reminders": null
+}
+-- what the startup log said about reminders with the mailer off:
+time=2026-10-31T01:47:34.554Z level=INFO msg="Mailer is disabled, not sending reminders per mail"
+time=2026-10-31T01:47:34.566Z level=INFO msg="Mailer is disabled, not sending overdue reminders per mail"
+
+== POST /projects/2/tasks/5 — mark the paint-tin run done
+{
+  "id": null,
+  "title": null,
+  "done": null,
+  "done_at": null
+}

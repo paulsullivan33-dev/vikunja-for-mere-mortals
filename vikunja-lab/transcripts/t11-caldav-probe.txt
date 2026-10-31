@@ -1,0 +1,7 @@
+== CalDAV: the server said caldav_enabled: true. Where does it live?
+-- PROPFIND /dav/ (basic auth, fixture user)
+<?xml version="1.0" encoding="UTF-8"?><D:multistatus xmlns:D="DAV:" xmlns:C="urn:ietf:params:xml:ns:caldav" xmlns:CS="http://calendarserver.org/ns/"><D:response><D:href>/dav</D:href></D:response></D:multistatus>
+HTTP 207
+
+-- PROPFIND /dav/projects/2/ 
+<?xml version="1.0" encoding="UTF-8"?><D:multistatus xmlns:D="DAV:" xmlns:C="urn:ietf:params:xml:ns:caldav" xmlns:CS="http://calendarserver.org/ns/"><D:response><D:href>/dav/projects/2</D:href></D:response><D:response><D:href>/dav/projects/2/0a3596f1-69d4-41d9-a59b-07ea714d98ad.ics</D:href></D:response><D:response><D:href>/dav/projects/2/f7b09be7-0fc3-47e0-b230-51ecadab1eb8.ics</D:href></D:response><D:response><D:href>/dav/projects/2/4635532e-6e25-4cbb-ada9-054526f2c786.ics</D:href></D:response></D:multistatus>

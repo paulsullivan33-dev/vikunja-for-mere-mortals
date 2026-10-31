@@ -1,0 +1,62 @@
+== vikunja dump — one zip with config, database and files (listing)
+Archive:  /home/hatch/workspace/vikunja-labwork/run/vikunja-dump_2026-10-31_01-01-36.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+      550  2026-10-31 01:47   config.yml
+        6  1980-00-00 00:00   VERSION
+      565  1980-00-00 00:00   database/subscriptions.json
+        2  1980-00-00 00:00   database/favorites.json
+        2  1980-00-00 00:00   database/task_unread_statuses.json
+        2  1980-00-00 00:00   database/task_comments.json
+        2  1980-00-00 00:00   database/unsplash_photos.json
+      653  1980-00-00 00:00   database/task_positions.json
+        2  1980-00-00 00:00   database/oauth_codes.json
+        2  1980-00-00 00:00   database/time_entries.json
+        2  1980-00-00 00:00   database/user_invite_link_teams.json
+        2  1980-00-00 00:00   database/team_projects.json
+      307  1980-00-00 00:00   database/labels.json
+      672  1980-00-00 00:00   database/api_tokens.json
+        2  1980-00-00 00:00   database/notifications.json
+     1387  1980-00-00 00:00   database/buckets.json
+      322  1980-00-00 00:00   database/sessions.json
+      165  1980-00-00 00:00   database/license_status.json
+       65  1980-00-00 00:00   database/project_task_counters.json
+        2  1980-00-00 00:00   database/users_projects.json
+       85  1980-00-00 00:00   database/task_attachments.json
+        2  1980-00-00 00:00   database/webhooks.json
+     6271  1980-00-00 00:00   database/migration.json
+      124  1980-00-00 00:00   database/files.json
+       87  1980-00-00 00:00   database/project_ancestors.json
+        2  1980-00-00 00:00   database/teams.json
+      126  1980-00-00 00:00   database/task_reminders.json
+        2  1980-00-00 00:00   database/reactions.json
+     3196  1980-00-00 00:00   database/project_views.json
+      148  1980-00-00 00:00   database/task_buckets.json
+        2  1980-00-00 00:00   database/migration_status.json
+        2  1980-00-00 00:00   database/totp.json
+        2  1980-00-00 00:00   database/user_tokens.json
+        2  1980-00-00 00:00   database/task_assignees.json
+        2  1980-00-00 00:00   database/user_invite_links.json
+      599  1980-00-00 00:00   database/projects.json
+     2735  1980-00-00 00:00   database/tasks.json
+      135  1980-00-00 00:00   database/label_tasks.json
+      296  1980-00-00 00:00   database/saved_filters.json
+      699  1980-00-00 00:00   database/users.json
+        2  1980-00-00 00:00   database/task_index_aliases.json
+        2  1980-00-00 00:00   database/team_members.json
+      214  1980-00-00 00:00   database/link_shares.json
+        2  1980-00-00 00:00   database/task_relations.json
+       76  1980-00-00 00:00   files/1
+---------                     -------
+    19525                     45 files
+== The whole installation on disk (the run/ folder, cache files removed from this listing)
+./config.yml
+./files/1
+./logs/database.log
+./server.log
+./vikunja.db
+./vikunja.db-shm
+./vikunja.db-wal
+684K	vikunja.db
+4.0K	files
+516K	logs

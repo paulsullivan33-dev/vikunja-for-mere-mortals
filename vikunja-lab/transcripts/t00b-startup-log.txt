@@ -1,0 +1,10 @@
+== First start, abridged from the server log (times are the lab clock, UTC)
+time=2026-10-31T01:47:33.851Z level=INFO msg="Using config file: /home/hatch/workspace/vikunja-labwork/run/config.yml"
+time=2026-10-31T01:47:33.852Z level=INFO msg="Running migrations…"
+time=2026-10-31T01:47:33.853Z level=INFO msg="Using SQLite database at: /home/hatch/workspace/vikunja-labwork/run/vikunja.db"
+time=2026-10-31T01:47:34.490Z level=INFO msg="Ran all migrations successfully."
+time=2026-10-31T01:47:34.491Z level=WARN msg="No license key configured. Pro features have been disabled."
+time=2026-10-31T01:47:34.554Z level=INFO msg="Mailer is disabled, not sending reminders per mail"
+time=2026-10-31T01:47:34.566Z level=INFO msg="Mailer is disabled, not sending overdue reminders per mail"
+time=2026-10-31T01:47:34.568Z level=INFO msg="Vikunja version v2.7.1"
+time=2026-10-31T01:47:35.869Z level=INFO msg="HTTP server listening on 127.0.0.1:18105"

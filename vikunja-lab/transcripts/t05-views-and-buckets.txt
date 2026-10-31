@@ -1,0 +1,47 @@
+== GET /api/v1/projects/2/views — every project is born with four views
+[
+  {
+    "id": 9,
+    "title": "List",
+    "view_kind": "list",
+    "bucket_configuration_mode": "none"
+  },
+  {
+    "id": 10,
+    "title": "Gantt",
+    "view_kind": "gantt",
+    "bucket_configuration_mode": "none"
+  },
+  {
+    "id": 11,
+    "title": "Table",
+    "view_kind": "table",
+    "bucket_configuration_mode": "none"
+  },
+  {
+    "id": 12,
+    "title": "Kanban",
+    "view_kind": "kanban",
+    "bucket_configuration_mode": "manual"
+  }
+]
+kanban view id: 12
+
+== GET /api/v1/projects/2/views/12/buckets
+[
+  {
+    "id": 7,
+    "title": "To-Do",
+    "limit": 0
+  },
+  {
+    "id": 8,
+    "title": "Doing",
+    "limit": 0
+  },
+  {
+    "id": 9,
+    "title": "Done",
+    "limit": 0
+  }
+]

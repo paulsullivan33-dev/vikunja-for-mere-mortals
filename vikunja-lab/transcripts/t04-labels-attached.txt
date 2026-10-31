@@ -1,0 +1,45 @@
+== DELETE /api/v1/tasks/{id} is the route that works (the nested /projects/1/tasks/{id} route answered 404)
+task 2 -> Successfully deleted.
+task 3 -> Successfully deleted.
+Inbox tasks now: []
+
+== PUT /api/v1/tasks/{id}/labels  (pin the labels onto tasks)
+task 5 + label 1 (errand):
+{
+  "id": null,
+  "title": null
+}
+task 6 + label 2 (needs two people):
+{
+  "id": null,
+  "title": null
+}
+
+== GET /api/v1/projects/2/tasks — the project as the list view sees it
+[
+  {
+    "id": 4,
+    "title": "Sweep the floor and lay the mats",
+    "priority": 2,
+    "due_date": "2026-11-07T10:00:00Z",
+    "labels": []
+  },
+  {
+    "id": 5,
+    "title": "Take the old paint tins to the recycling centre",
+    "priority": 5,
+    "due_date": "2026-11-05T09:00:00Z",
+    "labels": [
+      "errand"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Label the storage boxes",
+    "priority": 0,
+    "due_date": "0001-01-01T00:00:00Z",
+    "labels": [
+      "needs two people"
+    ]
+  }
+]

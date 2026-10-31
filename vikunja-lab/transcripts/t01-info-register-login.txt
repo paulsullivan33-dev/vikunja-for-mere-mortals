@@ -1,0 +1,31 @@
+== GET /api/v1/info (abridged by hand in the guide; key fields shown)
+{
+  "version": "v2.7.1",
+  "frontend_url": "http://127.0.0.1:18105/",
+  "caldav_enabled": true,
+  "available_migrators": [
+    "vikunja-file",
+    "ticktick",
+    "wekan",
+    "csv",
+    "planka"
+  ],
+  "auth": {
+    "enabled": true,
+    "registration_enabled": true
+  },
+  "enabled_pro_features": []
+}
+
+== POST /api/v1/register  {"username":"ada","email":"ada@example.org","password":"<fixture password>"}
+{
+  "id": 1,
+  "username": "ada",
+  "email": null,
+  "created": "2026-10-31T01:48:10Z"
+}
+
+== POST /api/v1/login  {"username":"ada","password":"<fixture password>"}
+{
+  "token": "<redacted — a JWT, three dot-separated parts>"
+}

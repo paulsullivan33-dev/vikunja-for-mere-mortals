@@ -1,0 +1,76 @@
+== POST /api/v1/tasks/4 — the reminder (the nested /projects/2/tasks/4 route answered 404)
+{
+  "id": 4,
+  "title": "Sweep the floor and lay the mats",
+  "reminders": [
+    {
+      "reminder": "2026-11-07T08:00:00Z",
+      "relative_period": 0,
+      "relative_to": ""
+    }
+  ]
+}
+
+== POST /api/v1/tasks/5 — done
+{
+  "id": 5,
+  "title": "Take the old paint tins to the recycling centre",
+  "done": true,
+  "done_at": "2026-10-31T01:50:07.499277087Z"
+}
+
+== The board now (empty buckets arrive as tasks: null, hence the // [] in the filter)
+[
+  {
+    "bucket": "To-Do",
+    "tasks": [
+      {
+        "id": 6,
+        "title": "Label the storage boxes",
+        "done": false
+      }
+    ]
+  },
+  {
+    "bucket": "Doing",
+    "tasks": [
+      {
+        "id": 4,
+        "title": "Sweep the floor and lay the mats",
+        "done": false
+      }
+    ]
+  },
+  {
+    "bucket": "Done",
+    "tasks": [
+      {
+        "id": 5,
+        "title": "Take the old paint tins to the recycling centre",
+        "done": true
+      }
+    ]
+  }
+]
+
+== The list view agrees: GET /projects/2/tasks
+[
+  {
+    "id": 4,
+    "title": "Sweep the floor and lay the mats",
+    "done": false,
+    "priority": 0
+  },
+  {
+    "id": 5,
+    "title": "Take the old paint tins to the recycling centre",
+    "done": true,
+    "priority": 0
+  },
+  {
+    "id": 6,
+    "title": "Label the storage boxes",
+    "done": false,
+    "priority": 0
+  }
+]

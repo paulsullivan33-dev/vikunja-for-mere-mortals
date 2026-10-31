@@ -1,0 +1,26 @@
+== PUT /api/v1/tokens — a scoped API token (value redacted here; it begins "tk_")
+{
+  "id": 2,
+  "title": "second token just to have its value on file",
+  "token": "tk_<redacted>",
+  "permissions": {
+    "projects": [
+      "read_all"
+    ],
+    "tasks": [
+      "read_all"
+    ]
+  },
+  "expires_at": "2027-10-31T00:00:00Z"
+}
+
+== The token at work: GET /api/v1/projects with only the token
+[
+  "Inbox",
+  "Shed Tidy-Up"
+]
+
+== And its fence: the same token tries to create a task (read_all only)
+{"code":11,"message":"missing, malformed, expired or otherwise invalid token provided"}
+
+HTTP 401

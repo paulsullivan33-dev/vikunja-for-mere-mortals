@@ -1,0 +1,34 @@
+== DELETE the three Inbox tasks again (DELETE /projects/1/tasks/{id})
+task 1 -> HTTP 404
+task 2 -> HTTP 404
+task 3 -> HTTP 404
+
+== PUT /api/v1/labels  (creation is PUT here too)
+{
+  "id": 1,
+  "title": "errand",
+  "hex_color": "1f8feb"
+}
+{
+  "id": 2,
+  "title": "needs two people",
+  "hex_color": "d29922"
+}
+
+== PUT /api/v1/projects/2/tasks  (the same three tasks, in the right project this time)
+{
+  "id": 4,
+  "title": "Sweep the floor and lay the mats",
+  "due_date": "2026-11-07T10:00:00Z",
+  "priority": 2
+}
+{
+  "id": 5,
+  "title": "Take the old paint tins to the recycling centre",
+  "due_date": "2026-11-05T09:00:00Z",
+  "priority": 5
+}
+{
+  "id": 6,
+  "title": "Label the storage boxes"
+}

@@ -1,0 +1,20 @@
+service:
+  secret: "<redacted>"
+  interface: "127.0.0.1:18105"
+  publicurl: "http://127.0.0.1:18105/"
+  rootpath: "/home/hatch/workspace/vikunja-labwork/run"
+  enableregistration: true
+  enablecaldav: true
+  timezone: "UTC"
+database:
+  type: "sqlite"
+  path: "/home/hatch/workspace/vikunja-labwork/run/vikunja.db"
+files:
+  basepath: "/home/hatch/workspace/vikunja-labwork/run/files"
+mailer:
+  enabled: false
+log:
+  enabled: true
+  path: "/home/hatch/workspace/vikunja-labwork/run/logs"
+  standard: "stdout"
+  database: "file"

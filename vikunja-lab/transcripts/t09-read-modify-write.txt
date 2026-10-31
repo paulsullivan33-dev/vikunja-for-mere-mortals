@@ -1,0 +1,18 @@
+== Read-modify-write (retry, absolute paths): whole task fetched, two fields patched, whole task sent back
+{
+  "id": 4,
+  "priority": 2,
+  "due_date": "2026-11-07T10:00:00Z",
+  "reminders": [
+    "2026-11-07T08:00:00Z"
+  ]
+}
+{
+  "id": 5,
+  "priority": 5,
+  "due_date": "2026-11-05T09:00:00Z",
+  "done": true,
+  "labels": [
+    "errand"
+  ]
+}

@@ -1,0 +1,11 @@
+$ sha256sum vikunja-v2.7.1-linux-amd64-full.zip   (zip itself: no checksum published by the project)
+2d0b64a477341977958067a42a32655b74f5e72e6eb02f57942faa19d9ee76ad  vikunja-v2.7.1-linux-amd64-full.zip
+
+$ cat vikunja-v2.7.1-linux-amd64.sha256   (sidecar shipped inside the zip)
+517b6b3d43c0b472af69c01ab8a1b412c3bf4c45c20cfba357db3c7cd1200ff8  vikunja-v2.7.1-linux-amd64
+$ sha256sum vikunja-v2.7.1-linux-amd64
+517b6b3d43c0b472af69c01ab8a1b412c3bf4c45c20cfba357db3c7cd1200ff8  vikunja-v2.7.1-linux-amd64
+
+$ ./vikunja version
+Vikunja api version v2.7.1
+Built with go1.27.3

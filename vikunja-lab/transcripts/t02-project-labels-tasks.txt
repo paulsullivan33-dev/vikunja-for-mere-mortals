@@ -1,0 +1,39 @@
+== PUT /api/v1/projects  (create the fixture project)
+{
+  "id": 2,
+  "title": "Shed Tidy-Up",
+  "description": "A small invented project: clear, sort and label everything in the garden shed."
+}
+
+== POST /api/v1/labels  (two labels; labels must exist before tasks can wear them)
+{
+  "id": null,
+  "title": null,
+  "hex_color": null
+}
+{
+  "id": null,
+  "title": null,
+  "hex_color": null
+}
+
+== PUT /api/v1/projects/1/tasks  (three tasks)
+{
+  "id": 1,
+  "title": "Sweep the floor and lay the mats",
+  "due_date": "2026-11-07T10:00:00Z",
+  "priority": 2,
+  "done": false
+}
+{
+  "id": 2,
+  "title": "Take the old paint tins to the recycling centre",
+  "due_date": "2026-11-05T09:00:00Z",
+  "priority": 5,
+  "done": false
+}
+{
+  "id": 3,
+  "title": "Label the storage boxes",
+  "done": false
+}
